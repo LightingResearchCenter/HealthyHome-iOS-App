@@ -74,7 +74,6 @@
 		8B0211261BC843970044A259 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0211071BC843970044A259 /* TransformationMatrix.cpp */; };
 		8B0211271BC843970044A259 /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B02110B1BC843970044A259 /* PopMenu.m */; };
 		8B0211281BC843970044A259 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8B02110D1BC843970044A259 /* LICENSE */; };
-		8B0211291BC843970044A259 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B02110E1BC843970044A259 /* README.md */; };
 		8B02112A1BC843970044A259 /* XHRealTimeBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0211111BC843970044A259 /* XHRealTimeBlur.m */; };
 		8B190E191ADD6A3F00636DE3 /* EntityHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B190E181ADD6A3F00636DE3 /* EntityHub.m */; };
 		8B190E251ADD6A4000636DE3 /* EntitySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B190E241ADD6A4000636DE3 /* EntitySubject.m */; };
@@ -158,8 +157,6 @@
 		8B5866871A13965100F2BA7B /* battery-medium.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866831A13965100F2BA7B /* battery-medium.png */; };
 		8B5866891A13A86100F2BA7B /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5866881A13A86100F2BA7B /* CoreDataManager.m */; };
 		8B5866911A15106300F2BA7B /* M13BadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5866901A15106300F2BA7B /* M13BadgeView.m */; };
-		8B58669A1A163D1E00F2BA7B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866941A163D1E00F2BA7B /* README.md */; };
-		8B58669B1A163D1E00F2BA7B /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866951A163D1E00F2BA7B /* release_notes.md */; };
 		8B58669D1A1642D300F2BA7B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B58669C1A1642D300F2BA7B /* libz.dylib */; };
 		8B5866A91A1646A500F2BA7B /* CSNetAddressKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5866A01A1646A500F2BA7B /* CSNetAddressKeyboard.m */; };
 		8B5866AA1A1646A500F2BA7B /* ipkeyboard-ipv4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A11A1646A500F2BA7B /* ipkeyboard-ipv4@2x.png */; };
@@ -169,7 +166,6 @@
 		8B5866AE1A1646A500F2BA7B /* netAddressBackspace.psd in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A51A1646A500F2BA7B /* netAddressBackspace.psd */; };
 		8B5866AF1A1646A500F2BA7B /* netAddressBackspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A61A1646A500F2BA7B /* netAddressBackspace@2x.png */; };
 		8B5866B01A1646A500F2BA7B /* netAddressBackspace@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A71A1646A500F2BA7B /* netAddressBackspace@3x.png */; };
-		8B5866B11A1646A500F2BA7B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A81A1646A500F2BA7B /* README.md */; };
 		8B5868241A1D00F000F2BA7B /* DaysiLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5868231A1D00F000F2BA7B /* DaysiLight.m */; };
 		8B5F41681B70E54F00372E26 /* TPKeyboardAvoidingCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F41611B70E54F00372E26 /* TPKeyboardAvoidingCollectionView.m */; };
 		8B5F41691B70E54F00372E26 /* TPKeyboardAvoidingScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5F41631B70E54F00372E26 /* TPKeyboardAvoidingScrollView.m */; };
@@ -1824,10 +1820,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B58669B1A163D1E00F2BA7B /* release_notes.md in Resources */,
-				8B0211291BC843970044A259 /* README.md in Resources */,
-				8B5866B11A1646A500F2BA7B /* README.md in Resources */,
-				8B58669A1A163D1E00F2BA7B /* README.md in Resources */,
 				8B5866AB1A1646A500F2BA7B /* ipkeyboard-ipv6@2x.png in Resources */,
 				8B5866B01A1646A500F2BA7B /* netAddressBackspace@3x.png in Resources */,
 				8B4EF8281A017B6700BF3BF5 /* ViewControllerSettings.xib in Resources */,
