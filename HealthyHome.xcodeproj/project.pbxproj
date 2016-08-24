@@ -2237,17 +2237,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/rajeevbhalla/Desktop/Daysimeter/Daysimeter/ThirdParty/Redpark,
-					Serial,
-					SDK,
-					1.4,
-					r270/lib,
-					/Users/rajeevbhalla/Desktop/Daysimeter/Daysimeter/ThirdParty/RedParkSerial,
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/RedParkSerial",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/TestFlightSDK",
-					"$(PROJECT_DIR)/Healthyhome/CircadianModel/createlightschedule",
-					/Users/rbhalla/Dropbox/Work/Projects/CMR/Software/PC/Utilities/VStudioProjects/PedramModified/createlightschedule,
-					"$(PROJECT_DIR)/Healthyhome/Circadian/createlightschedule",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/JVMenuPopover",
 					"$(PROJECT_DIR)/HealthyHome/ThirdParty/TestFairySDK-1.5.1",
 				);
@@ -2273,17 +2264,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/rajeevbhalla/Desktop/Daysimeter/Daysimeter/ThirdParty/Redpark,
-					Serial,
-					SDK,
-					1.4,
-					r270/lib,
-					/Users/rajeevbhalla/Desktop/Daysimeter/Daysimeter/ThirdParty/RedParkSerial,
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/RedParkSerial",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/TestFlightSDK",
-					"$(PROJECT_DIR)/Healthyhome/CircadianModel/createlightschedule",
-					/Users/rbhalla/Dropbox/Work/Projects/CMR/Software/PC/Utilities/VStudioProjects/PedramModified/createlightschedule,
-					"$(PROJECT_DIR)/Healthyhome/Circadian/createlightschedule",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/JVMenuPopover",
 					"$(PROJECT_DIR)/HealthyHome/ThirdParty/TestFairySDK-1.5.1",
 				);
