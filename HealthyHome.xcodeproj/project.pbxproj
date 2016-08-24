@@ -1796,7 +1796,7 @@
 				ORGANIZATIONNAME = "RAJEEV BHALLA";
 				TargetAttributes = {
 					68FE5BF119E8C6860077D2FC = {
-						DevelopmentTeam = G6624XDVWH;
+						DevelopmentTeam = 8DAA428ZH3;
 					};
 				};
 			};
@@ -2218,6 +2218,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8DAA428ZH3;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HealthyHome/HealthyHome-Prefix.pch";
@@ -2252,6 +2253,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8DAA428ZH3;
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HealthyHome/HealthyHome-Prefix.pch";
