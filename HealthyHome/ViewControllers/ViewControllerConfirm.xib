@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerConfirm">
+            <connections>
+                <outlet property="UIButtonConfirmNo" destination="yHT-T8-1Uf" id="NSS-bU-otd"/>
+                <outlet property="UIButtonConfirmYes" destination="cMy-cA-uBV" id="VO9-Gc-GpG"/>
+                <outlet property="UIImageViewLogo" destination="LQ3-Uq-Uqv" id="hhs-z9-uDE"/>
+                <outlet property="UILabelCaption" destination="CVC-7Q-lfC" id="AQ5-Hw-bS4"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view opaque="NO" clearsContextBeforeDrawing="NO" alpha="0.94999999999999996" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Disconnect?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CVC-7Q-lfC">
+                    <rect key="frame" x="20" y="174" width="273" height="132"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-120.png" translatesAutoresizingMaskIntoConstraints="NO" id="LQ3-Uq-Uqv">
+                    <rect key="frame" x="71" y="51" width="178" height="99"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="99" id="A3J-cQ-6Xl"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cMy-cA-uBV">
+                    <rect key="frame" x="53" y="351" width="196" height="51"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="51" id="pAa-2B-ofF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                    <state key="normal" title="Yes ✔︎">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonConfirmYesClose:" destination="-1" eventType="touchUpInside" id="VN1-d1-Jld"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHT-T8-1Uf">
+                    <rect key="frame" x="84" y="449" width="152" height="46"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="LPp-pn-36g"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="50"/>
+                    <state key="normal" title="No ✗">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonConfirmNoClose:" destination="-1" eventType="touchUpInside" id="BQV-gR-9EL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="CVC-7Q-lfC" firstAttribute="top" secondItem="LQ3-Uq-Uqv" secondAttribute="bottom" constant="24" id="5Q8-UT-9Uy"/>
+                <constraint firstItem="LQ3-Uq-Uqv" firstAttribute="trailing" secondItem="cMy-cA-uBV" secondAttribute="trailing" id="E4h-aC-B9v"/>
+                <constraint firstItem="cMy-cA-uBV" firstAttribute="top" secondItem="CVC-7Q-lfC" secondAttribute="bottom" constant="45" id="Kxi-bf-BbG"/>
+                <constraint firstItem="cMy-cA-uBV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="53" id="MPq-8Q-Nkb"/>
+                <constraint firstItem="CVC-7Q-lfC" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-3.5" id="QAp-ph-MFv"/>
+                <constraint firstItem="cMy-cA-uBV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-9" id="WXx-1l-aww"/>
+                <constraint firstItem="LQ3-Uq-Uqv" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="X0D-Lt-n62"/>
+                <constraint firstItem="LQ3-Uq-Uqv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="51" id="dWN-pP-Lvj"/>
+                <constraint firstItem="yHT-T8-1Uf" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="f8K-0l-3LE"/>
+                <constraint firstItem="yHT-T8-1Uf" firstAttribute="top" secondItem="cMy-cA-uBV" secondAttribute="bottom" constant="47" id="gOi-yB-sXQ"/>
+                <constraint firstItem="yHT-T8-1Uf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="84" id="hPT-j5-rcA"/>
+                <constraint firstAttribute="bottom" secondItem="yHT-T8-1Uf" secondAttribute="bottom" constant="73" id="khg-aU-0Ju"/>
+                <constraint firstItem="CVC-7Q-lfC" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="m4u-Io-4Fe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-110" y="-121"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Icon-120.png" width="120" height="120"/>
+    </resources>
+</document>

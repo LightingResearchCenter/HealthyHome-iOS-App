@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6252" systemVersion="13F34" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="EntityConfig" representedClassName="EntityConfig" syncable="YES">
+        <attribute name="downloadFlag" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="hoursLogging" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="logInterval" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="logStatus" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EntityDevice" representedClassName="EntityDevice" syncable="YES">
+        <attribute name="calibration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceType" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="firmwareRev" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastSync" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="modelNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="serialNumber" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EntityHub" representedClassName="EntityHub" syncable="YES">
+        <attribute name="hubId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hubURL" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="EntityLightReading" representedClassName="EntityLightReading" syncable="YES">
+        <attribute name="blueValue" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="claValue" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="clearValue" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="csValue" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="greenValue" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="redValue" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="timeUTC" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EntityModel" representedClassName="EntityModel" syncable="YES">
+        <attribute name="model" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="runTimeOffset" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="runTimeUTC" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="t0" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="tn" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="version" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="x0" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="xc0" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="xcn" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="xn" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <fetchedProperty name="fetchedProperty" optional="YES" syncable="YES">
+            <fetchRequest name="fetchedPropertyFetchRequest" entity="EntityModel"/>
+        </fetchedProperty>
+    </entity>
+    <entity name="EntityMotionReading" representedClassName="EntityMotionReading" syncable="YES">
+        <attribute name="activityCount" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="activityIndex" optional="YES" attributeType="Float" defaultValueString="0" syncable="YES"/>
+        <attribute name="batteryVoltage" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timeUTC" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timeZone" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EntitySubject" representedClassName="EntitySubject" syncable="YES">
+        <attribute name="dob" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="nickName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subjectId" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="EntityTreatment" representedClassName="EntityTreatment" syncable="YES">
+        <attribute name="duration" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="startTimeUTC" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="timeUTC" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="EntityConfig" positionX="-155" positionY="-27" width="128" height="103"/>
+        <element name="EntityDevice" positionX="-423" positionY="138" width="128" height="150"/>
+        <element name="EntityHub" positionX="-297" positionY="-27" width="128" height="28"/>
+        <element name="EntityLightReading" positionX="403" positionY="171" width="128" height="178"/>
+        <element name="EntityModel" positionX="-108" positionY="153" width="128" height="224"/>
+        <element name="EntityMotionReading" positionX="207" positionY="-63" width="171" height="135"/>
+        <element name="EntitySubject" positionX="-324" positionY="321" width="128" height="103"/>
+        <element name="EntityTreatment" positionX="-450" positionY="-27" width="128" height="90"/>
+    </elements>
+</model>

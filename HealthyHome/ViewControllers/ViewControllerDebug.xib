@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerDebug">
+            <connections>
+                <outlet property="UIActivityIndicatorBusy" destination="I7Z-Bi-yMZ" id="SxL-Cm-klh"/>
+                <outlet property="UIActivityIndicatorEmail" destination="lnJ-Vf-3TD" id="x2z-kv-Wc3"/>
+                <outlet property="UIButtonClearPaceMaker" destination="n7z-P0-1vr" id="qcm-DI-3vi"/>
+                <outlet property="UIButtonClose" destination="DTp-oB-78a" id="3WN-3T-fPx"/>
+                <outlet property="UIButtonEmailASCII" destination="3ig-Uv-hFm" id="M8b-dG-P9a"/>
+                <outlet property="UIButtonEmailLogFile" destination="Uhk-Sm-oJW" id="BY6-eh-Aos"/>
+                <outlet property="UIButtonReset" destination="9UQ-Sr-a9e" id="q76-3e-EaI"/>
+                <outlet property="UIButtonSyncDaysiMotionTime" destination="i42-Nf-jcL" id="rfH-Uu-80c"/>
+                <outlet property="UIButtonSyncDaysliLightTime" destination="7Dz-mU-foE" id="nOz-V1-wM7"/>
+                <outlet property="UISegmentControlCalibrate" destination="9gY-rX-lFH" id="5x3-q9-ecw"/>
+                <outlet property="UITextFieldCalBlue" destination="sTB-Nd-hOl" id="vJR-FC-4f5"/>
+                <outlet property="UITextFieldCalClear" destination="k8v-5j-xqp" id="ORj-MN-58S"/>
+                <outlet property="UITextFieldCalGreen" destination="Fyk-WZ-1K8" id="WKT-id-FA6"/>
+                <outlet property="UITextFieldCalRed" destination="KSf-2a-zPt" id="iTc-xW-IDQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="setting-wrenches-60.png" translatesAutoresizingMaskIntoConstraints="NO" id="cCN-p4-nnb">
+                    <rect key="frame" x="136" y="40" width="49" height="48"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="1tp-R7-QBW"/>
+                        <constraint firstAttribute="width" constant="49" id="X4e-yB-OCs"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wtK-qh-6Zu" customClass="TPKeyboardAvoidingScrollView">
+                    <rect key="frame" x="10" y="96" width="300" height="449"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="lnJ-Vf-3TD" userLabel="ActivityIndicatorEmail">
+                            <rect key="frame" x="132" y="47" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" momentary="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9gY-rX-lFH">
+                            <rect key="frame" x="25" y="413" width="243" height="29"/>
+                            <segments>
+                                <segment title="START"/>
+                                <segment title="STOP"/>
+                                <segment title="SET"/>
+                            </segments>
+                            <connections>
+                                <action selector="UISegmentControlCalibrateChanged:" destination="-1" eventType="valueChanged" id="nkO-hu-dkC"/>
+                            </connections>
+                        </segmentedControl>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7z-P0-1vr">
+                            <rect key="frame" x="153" y="75" width="147" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="Reset PaceMaker">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="UIButtonClearPaceMakerClicked:" destination="-1" eventType="touchUpInside" id="LrR-38-BAs"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" borderStyle="roundedRect" placeholder="1.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fyk-WZ-1K8" userLabel="UITextFieldGreen">
+                            <rect key="frame" x="132" y="273" width="89" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" borderStyle="roundedRect" placeholder="1.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sTB-Nd-hOl" userLabel="UITextFieldBlue">
+                            <rect key="frame" x="132" y="318" width="89" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qt0-qy-Lvi" userLabel="UILabelGreen">
+                            <rect key="frame" x="67" y="277" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22f-03-hNc">
+                            <rect key="frame" x="11" y="190" width="255" height="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <state key="normal" title="Calibrate DaysiLight">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="I7Z-Bi-yMZ">
+                            <rect key="frame" x="248" y="296" width="20" height="20"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBw-Ne-ek3" userLabel="UIlabelRed">
+                            <rect key="frame" x="67" y="232" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" borderStyle="roundedRect" placeholder="1.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KSf-2a-zPt" userLabel="UITextFieldRed">
+                            <rect key="frame" x="132" y="228" width="89" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1.0" borderStyle="roundedRect" placeholder="1.0" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8v-5j-xqp" userLabel="UITextFieldClear">
+                            <rect key="frame" x="132" y="363" width="89" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo9-fy-ygY" userLabel="UILabelBlue">
+                            <rect key="frame" x="67" y="322" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i42-Nf-jcL">
+                            <rect key="frame" x="11" y="144" width="170" height="30"/>
+                            <state key="normal" title="Sync DaysiMotion Time">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="UIButtonSyncDaysiMotionTimeClicked:" destination="-1" eventType="touchUpInside" id="WKD-An-WO2"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hic-Ih-IEH">
+                            <rect key="frame" x="10" y="182" width="269" height="4"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9UQ-Sr-a9e">
+                            <rect key="frame" x="11" y="75" width="154" height="30"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Reset all Data">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="UIButtonReset:" destination="-1" eventType="touchUpInside" id="Zs4-0M-hzc"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Dz-mU-foE">
+                            <rect key="frame" x="8" y="113" width="154" height="30"/>
+                            <state key="normal" title="Sync DaysiLight Time">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="UIButtonSyncDaysiLightTimeClicked:" destination="-1" eventType="touchUpInside" id="vfb-IL-hsv"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uhk-Sm-oJW">
+                            <rect key="frame" x="11" y="34" width="108" height="46"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Email Data">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="UIButtonEmailLogFileClicked:" destination="-1" eventType="touchUpInside" id="SUR-gU-Jsj"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ig-Uv-hFm">
+                            <rect key="frame" x="10" y="-1" width="250" height="46"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                            <state key="normal" title="Post Archive Data to Server">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="UIButtonPostArchiveDataClicked:" destination="-1" eventType="touchUpInside" id="hvC-6x-uzi"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Clear" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AAM-M8-XJo" userLabel="UILabelClear">
+                            <rect key="frame" x="67" y="367" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </scrollView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTp-oB-78a">
+                    <rect key="frame" x="8" y="8" width="60" height="60"/>
+                    <state key="normal" image="Concept_C_006_X Icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonClose:" destination="-1" eventType="touchUpInside" id="kCA-Av-mFV"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Utilities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CK3-wu-CBk">
+                    <rect key="frame" x="93" y="8" width="134" height="34"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="wtK-qh-6Zu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LpK-BO-SSR"/>
+                <constraint firstItem="cCN-p4-nnb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="LtI-0J-XkD"/>
+                <constraint firstItem="CK3-wu-CBk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hGd-lJ-FaM"/>
+                <constraint firstItem="wtK-qh-6Zu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hSK-GL-dzh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="397" y="312"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Concept_C_006_X Icon.png" width="52" height="52"/>
+        <image name="setting-wrenches-60.png" width="60" height="60"/>
+    </resources>
+</document>

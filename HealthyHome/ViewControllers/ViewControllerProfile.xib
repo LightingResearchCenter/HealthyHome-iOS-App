@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="ArchitectsDaughter.ttf">
+            <string>ArchitectsDaughter</string>
+            <string>ArchitectsDaughter</string>
+            <string>ArchitectsDaughter</string>
+            <string>ArchitectsDaughter</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerProfile">
+            <connections>
+                <outlet property="UIButtonClose" destination="B8j-xI-HtL" id="AfA-QY-1Uk"/>
+                <outlet property="UILabelAgeValue" destination="YMF-uA-dDE" id="ret-ji-QkJ"/>
+                <outlet property="UILabelSleepAtValue" destination="ALu-NA-a6G" id="jf9-iM-ly3"/>
+                <outlet property="UILabelWakeAtValue" destination="6Rm-3z-s08" id="qpT-rw-avC"/>
+                <outlet property="UISegmentControlGender" destination="fzD-Mo-lYM" id="Oey-sx-ZLi"/>
+                <outlet property="UISegmentControlWorkLocation" destination="Tbk-Iz-5eX" id="c7P-ow-HgW"/>
+                <outlet property="UISliderAge" destination="AGd-he-koN" id="whg-zy-C8S"/>
+                <outlet property="UISliderSleepAt" destination="vbp-7j-rZJ" id="Rm2-0e-xkp"/>
+                <outlet property="UISliderWakeAt" destination="dGq-TX-x8y" id="vhH-RY-p4V"/>
+                <outlet property="UITextFieldDateOfBirth" destination="0KP-On-tuz" id="pTi-8N-nlq"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8j-xI-HtL">
+                    <rect key="frame" x="8" y="8" width="60" height="60"/>
+                    <state key="normal" image="Concept_C_006_X Icon.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonHomeClicked:" destination="-1" eventType="touchUpInside" id="Qrh-Vu-anh"/>
+                    </connections>
+                </button>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="I normally Sleep @" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ALu-NA-a6G">
+                    <rect key="frame" x="20" y="380" width="213" height="21"/>
+                    <fontDescription key="fontDescription" name="ArchitectsDaughter" family="Architects Daughter" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="I normally Wake up @" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Rm-3z-s08">
+                    <rect key="frame" x="20" y="427" width="241" height="21"/>
+                    <fontDescription key="fontDescription" name="ArchitectsDaughter" family="Architects Daughter" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <slider hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="10" maxValue="110" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-he-koN" customClass="AHKSlider">
+                    <rect key="frame" x="18" y="356" width="216" height="31"/>
+                    <connections>
+                        <action selector="UISliderAgeChanged:" destination="-1" eventType="valueChanged" id="zmj-hs-CnK"/>
+                    </connections>
+                </slider>
+                <slider hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.75" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vbp-7j-rZJ" customClass="AHKSlider">
+                    <rect key="frame" x="18" y="395" width="266" height="31"/>
+                    <connections>
+                        <action selector="UISliderSleepAtChanged:" destination="-1" eventType="valueChanged" id="voY-nh-cTL"/>
+                    </connections>
+                </slider>
+                <slider hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dGq-TX-x8y" customClass="AHKSlider">
+                    <rect key="frame" x="24" y="456" width="260" height="31"/>
+                    <connections>
+                        <action selector="UISliderWakeAtChanged:" destination="-1" eventType="valueChanged" id="YOK-7n-al2"/>
+                    </connections>
+                </slider>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Tbk-Iz-5eX">
+                    <rect key="frame" x="183" y="496" width="123" height="29"/>
+                    <segments>
+                        <segment title="Indoor"/>
+                        <segment title="Outdoor"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="UISegmentWorkLocationChanged:" destination="-1" eventType="valueChanged" id="lUq-WL-cSw"/>
+                    </connections>
+                </segmentedControl>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="I normally work" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CUb-w2-WRt">
+                    <rect key="frame" x="20" y="494" width="155" height="30"/>
+                    <fontDescription key="fontDescription" name="ArchitectsDaughter" family="Architects Daughter" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMF-uA-dDE" userLabel="UILabelAgeValue">
+                    <rect key="frame" x="250" y="361" width="62" height="21"/>
+                    <fontDescription key="fontDescription" name="ArchitectsDaughter" family="Architects Daughter" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <datePicker hidden="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="hJw-HP-djC">
+                    <rect key="frame" x="20" y="317" width="274" height="162"/>
+                    <date key="date" timeIntervalSinceReferenceDate="451595103.437096">
+                        <!--2015-04-24 19:05:03 +0000-->
+                    </date>
+                </datePicker>
+                <segmentedControl hidden="YES" opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Vg1-5X-myt">
+                    <rect key="frame" x="172" y="415" width="103" height="29"/>
+                    <segments>
+                        <segment title="Set"/>
+                        <segment title="Done"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="UISegmentControlGenderChanged:" destination="-1" eventType="valueChanged" id="pIE-I3-ygc"/>
+                    </connections>
+                </segmentedControl>
+                <segmentedControl opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="fzD-Mo-lYM">
+                    <rect key="frame" x="130" y="263" width="182" height="29"/>
+                    <segments>
+                        <segment title="Male"/>
+                        <segment title="Female"/>
+                        <segment title="Other"/>
+                    </segments>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="UISegmentControlGenderChanged:" destination="-1" eventType="valueChanged" id="oUV-QM-qtY"/>
+                    </connections>
+                </segmentedControl>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="My Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="66s-bj-O3f" userLabel="UILabelHeading">
+                    <rect key="frame" x="103" y="8" width="136" height="37"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10/05/1992" borderStyle="roundedRect" placeholder="MM/DD/YYYY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0KP-On-tuz" userLabel="UITextFieldDateOfBirth">
+                    <rect key="frame" x="130" y="174" width="182" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                    <connections>
+                        <action selector="UITextFieldDateOfBirthValueChanged:" destination="-1" eventType="valueChanged" id="I8W-Le-d6S"/>
+                        <action selector="UITextFieldTouchUpInside:" destination="-1" eventType="touchUpInside" id="h9N-v3-BHE"/>
+                    </connections>
+                </textField>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user-setting-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="z2q-HO-cD5">
+                    <rect key="frame" x="141" y="53" width="60" height="60"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Date of Birth" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Opg-K5-FQC" userLabel="UILabelDateOfBirth">
+                    <rect key="frame" x="9" y="174" width="137" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Sex" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iT-JN-VeE" userLabel="UILaelSex">
+                    <rect key="frame" x="72" y="262" width="109" height="30"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6Rm-3z-s08" firstAttribute="leading" secondItem="5iT-JN-VeE" secondAttribute="leading" id="3eK-kv-EE7"/>
+                <constraint firstItem="6Rm-3z-s08" firstAttribute="leading" secondItem="ALu-NA-a6G" secondAttribute="leading" id="tcI-YS-bBc"/>
+                <constraint firstItem="6Rm-3z-s08" firstAttribute="leading" secondItem="Opg-K5-FQC" secondAttribute="leading" id="zgK-cA-R9A"/>
+            </constraints>
+            <point key="canvasLocation" x="166" y="128"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Concept_C_006_X Icon.png" width="52" height="52"/>
+        <image name="user-setting-2.png" width="90" height="90"/>
+    </resources>
+</document>

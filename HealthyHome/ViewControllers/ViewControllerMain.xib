@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewControllerMain">
+            <connections>
+                <outlet property="UIButtonDebug" destination="lCU-bD-HxU" id="Bb4-rP-kuu"/>
+                <outlet property="UIButtonInfo" destination="G9Q-EW-Uhr" id="d2z-R7-r4A"/>
+                <outlet property="UIButtonSettings" destination="B1h-VT-sUA" id="Hg5-4w-hJd"/>
+                <outlet property="UIImageViewDaysiLight" destination="tUZ-xH-OGa" id="X8b-CW-UUT"/>
+                <outlet property="UIImageViewDaysiMotion" destination="KfY-hB-Yzb" id="POT-Lf-tCp"/>
+                <outlet property="UIImageViewGoals" destination="huO-GC-CaP" id="IE7-3g-1Fi"/>
+                <outlet property="UIImageViewHeartRate" destination="dbM-yP-2jI" id="Fi2-XW-teP"/>
+                <outlet property="UIImageViewProfile" destination="mzW-pc-DM2" id="cHK-2E-IWx"/>
+                <outlet property="UIImageViewSync" destination="CtP-JN-2K0" id="Jwf-2L-fgX"/>
+                <outlet property="UIImageViewTreatments" destination="f64-Ed-ddO" id="Tha-sc-cDN"/>
+                <outlet property="UILabelAppTitle" destination="jcT-5F-bN0" id="ImS-lP-Hh0"/>
+                <outlet property="UILabelDevices" destination="Tmb-qO-C6B" id="ag9-vv-a5c"/>
+                <outlet property="UILabelGoals" destination="CT4-fY-eRN" id="MqG-Gf-3dI"/>
+                <outlet property="UILabelProfile" destination="8Uw-P2-5wC" id="P4b-hg-mgg"/>
+                <outlet property="UILabelTreatments" destination="ERo-Ff-yni" id="LWX-uC-aK3"/>
+                <outlet property="UIViewBadge" destination="NBO-mK-7gM" id="Fad-Zh-Kdf"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mortar-and-pestle.png" translatesAutoresizingMaskIntoConstraints="NO" id="f64-Ed-ddO" userLabel="ImageViewTreatments">
+                    <rect key="frame" x="191" y="245" width="98" height="118"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="M11-K2-Qkc" appends="YES" id="Kee-ca-5VM"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crosshair-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="huO-GC-CaP" userLabel="ImageViewGoals">
+                    <rect key="frame" x="201" y="76" width="92" height="108"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="AYa-Pn-IK5" appends="YES" id="Yil-Y6-SXb"/>
+                    </connections>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CT4-fY-eRN">
+                    <rect key="frame" x="201" y="183" width="86" height="21"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="AYa-Pn-IK5" appends="YES" id="9f6-Cm-nVf"/>
+                    </connections>
+                </label>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user-setting-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="mzW-pc-DM2" userLabel="ImageViewProfile">
+                    <rect key="frame" x="40" y="63" width="110" height="134"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="lH0-db-Aqe" appends="YES" id="KKd-Nl-bvb"/>
+                    </connections>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Uw-P2-5wC" userLabel="LabelProfile">
+                    <rect key="frame" x="40" y="183" width="88" height="21"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="lH0-db-Aqe" appends="YES" id="8ZG-qm-Sq0"/>
+                    </connections>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9Q-EW-Uhr" userLabel="ButtonInfo">
+                    <rect key="frame" x="230" y="493" width="59" height="57"/>
+                    <state key="normal" title="Button" image="Merit_Medical_icon_info_white.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonAppInfo:" destination="-1" eventType="touchUpInside" id="Cdl-GH-Giw"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Devices" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tmb-qO-C6B">
+                    <rect key="frame" x="34" y="380" width="105" height="21"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Ll8-8h-eN9" appends="YES" id="s1h-Kk-Hay"/>
+                    </connections>
+                </label>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="glasses-2.png" translatesAutoresizingMaskIntoConstraints="NO" id="tUZ-xH-OGa" userLabel="UIImageGlasses">
+                    <rect key="frame" x="20" y="245" width="77" height="108"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Ll8-8h-eN9" appends="YES" id="8kX-En-mgF"/>
+                    </connections>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1h-VT-sUA" userLabel="ButtonInfo">
+                    <rect key="frame" x="29" y="493" width="59" height="57"/>
+                    <state key="normal" title="Button" image="setting-adjustment.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonSettingsClicked:" destination="-1" eventType="touchUpInside" id="h0h-GN-tFS"/>
+                    </connections>
+                </button>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watch-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="KfY-hB-Yzb" userLabel="UIImageViewDaysiWatch">
+                    <rect key="frame" x="77" y="277" width="82" height="90"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Ll8-8h-eN9" appends="YES" id="1VD-LV-mAD"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart-pulse.png" translatesAutoresizingMaskIntoConstraints="NO" id="dbM-yP-2jI" userLabel="UIImageViewHeartRate">
+                    <rect key="frame" x="29" y="324" width="82" height="43"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Ll8-8h-eN9" appends="YES" id="Z5h-Lb-pYa"/>
+                    </connections>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCU-bD-HxU" userLabel="ButtonDebug">
+                    <rect key="frame" x="132" y="493" width="59" height="57"/>
+                    <state key="normal" title="Button" image="bug-1.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="UIButtonDebugClicked:" destination="-1" eventType="touchUpInside" id="LqN-Tp-TY1"/>
+                    </connections>
+                </button>
+                <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sync-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="CtP-JN-2K0" userLabel="UIImageViewConnected">
+                    <rect key="frame" x="131" y="277" width="28" height="26"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HealthyHome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jcT-5F-bN0">
+                    <rect key="frame" x="64" y="8" width="195" height="39"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="24"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="highlightedColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    <color key="shadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <size key="shadowOffset" width="1" height="1"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Treatments" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERo-Ff-yni">
+                    <rect key="frame" x="170" y="380" width="117" height="21"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="M11-K2-Qkc" appends="YES" id="k8L-yy-iJF"/>
+                    </connections>
+                </label>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NBO-mK-7gM">
+                    <rect key="frame" x="263" y="307" width="49" height="30"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="M11-K2-Qkc" appends="YES" id="VHi-kh-wOp"/>
+                    </connections>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+        <tapGestureRecognizer id="Ll8-8h-eN9" userLabel="TapGestureDevices">
+            <connections>
+                <action selector="TapGestureDevicesTapped:" destination="-1" id="2ed-G3-u68"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="lH0-db-Aqe" userLabel="TapGestureProfile">
+            <connections>
+                <action selector="TapGestureProfileTapped:" destination="-1" id="hBO-YH-1Tl"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="M11-K2-Qkc" userLabel="TapGestureTreatments">
+            <connections>
+                <action selector="TapGestureTreatmentsTapped:" destination="-1" id="J1o-EN-q3B"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="AYa-Pn-IK5" userLabel="TapGestureGoals">
+            <connections>
+                <action selector="TapGestureGoalsTapped:" destination="-1" id="iUZ-wl-Cuf"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="Merit_Medical_icon_info_white.png" width="86" height="86"/>
+        <image name="bug-1.png" width="90" height="90"/>
+        <image name="crosshair-1.png" width="90" height="90"/>
+        <image name="glasses-2.png" width="90" height="90"/>
+        <image name="heart-pulse.png" width="90" height="90"/>
+        <image name="mortar-and-pestle.png" width="90" height="90"/>
+        <image name="setting-adjustment.png" width="90" height="90"/>
+        <image name="sync-1.png" width="90" height="90"/>
+        <image name="user-setting-2.png" width="90" height="90"/>
+        <image name="watch-1.png" width="90" height="90"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

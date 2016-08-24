@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="profile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="lightreading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="bedWakeTimes2TargetPhase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blackbox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blackbox_emxAPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blackbox_emxutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blackbox_initialize.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blackbox_rtwutil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blackbox_terminate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blackbox_types.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="cos.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="createlightschedule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="diff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCabs2relTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCacrophaseAngle2Time.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCcosinorFit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCgapFill.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCisAvail.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCphaseDifference.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCtruncate_activityReading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LRCtruncate_lightReading.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mldivide.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pacemakerModelRun.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="refPhaseTime2StateAtTime.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rk4stepperSec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="rtwtypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prepare_activity_struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="prepare_light_struct.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="CircadianModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blackbox_emxAPI.c">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="bedWakeTimes2TargetPhase.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blackbox.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blackbox_emxutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blackbox_initialize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blackbox_rtwutil.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="blackbox_terminate.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="cos.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="createlightschedule.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="diff.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCabs2relTime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCacrophaseAngle2Time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCcosinorFit.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCgapFill.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCisAvail.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCphaseDifference.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCtruncate_activityReading.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LRCtruncate_lightReading.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mldivide.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mod.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="pacemakerModelRun.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="refPhaseTime2StateAtTime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="rk4stepperSec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prepare_activity_struct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="prepare_light_struct.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CircadianModel.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
