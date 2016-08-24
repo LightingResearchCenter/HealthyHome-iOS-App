@@ -2242,7 +2242,7 @@
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/JVMenuPopover",
 					"$(PROJECT_DIR)/HealthyHome/ThirdParty/TestFairySDK-1.5.1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iainc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpi-lrc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = HealthyHome;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -2269,7 +2269,7 @@
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/JVMenuPopover",
 					"$(PROJECT_DIR)/HealthyHome/ThirdParty/TestFairySDK-1.5.1",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.iainc.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rpi-lrc.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = HealthyHome;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;

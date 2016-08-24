@@ -23,7 +23,7 @@
 			<string>Default</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.iainc.HealthyHome.sqlite</string>
+				<string>com.rpi-lrc.HealthyHome.sqlite</string>
 			</array>
 		</dict>
 	</array>
@@ -96,7 +96,7 @@
 			<key>UTTypeDescription</key>
 			<string>HealthyHome Database</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.iainc.HealthyHome.sqlite</string>
+			<string>com.rpi-lrc.HealthyHome.sqlite</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>
