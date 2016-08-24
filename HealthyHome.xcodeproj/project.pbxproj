@@ -73,7 +73,6 @@
 		8B0211251BC843970044A259 /* POPVector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8B0211041BC843970044A259 /* POPVector.mm */; };
 		8B0211261BC843970044A259 /* TransformationMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8B0211071BC843970044A259 /* TransformationMatrix.cpp */; };
 		8B0211271BC843970044A259 /* PopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B02110B1BC843970044A259 /* PopMenu.m */; };
-		8B0211281BC843970044A259 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8B02110D1BC843970044A259 /* LICENSE */; };
 		8B02112A1BC843970044A259 /* XHRealTimeBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0211111BC843970044A259 /* XHRealTimeBlur.m */; };
 		8B190E191ADD6A3F00636DE3 /* EntityHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B190E181ADD6A3F00636DE3 /* EntityHub.m */; };
 		8B190E251ADD6A4000636DE3 /* EntitySubject.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B190E241ADD6A4000636DE3 /* EntitySubject.m */; };
@@ -94,14 +93,11 @@
 		8B4EF7361A011BD600BF3BF5 /* white_texture_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF69F1A011BD500BF3BF5 /* white_texture_@2X.png */; };
 		8B4EF7381A011BD600BF3BF5 /* background_grey_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6A21A011BD500BF3BF5 /* background_grey_light.png */; };
 		8B4EF74C1A011BD600BF3BF5 /* divider_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6B61A011BD500BF3BF5 /* divider_settings.png */; };
-		8B4EF75C1A011BD600BF3BF5 /* grey_wash_wall.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6C61A011BD500BF3BF5 /* grey_wash_wall.png */; };
-		8B4EF75D1A011BD600BF3BF5 /* grey_wash_wall_@2X.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6C71A011BD500BF3BF5 /* grey_wash_wall_@2X.png */; };
 		8B4EF7601A011BD600BF3BF5 /* icon_email.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6CA1A011BD500BF3BF5 /* icon_email.png */; };
 		8B4EF7611A011BD600BF3BF5 /* icon_gauge_pressure_current.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6CB1A011BD500BF3BF5 /* icon_gauge_pressure_current.png */; };
 		8B4EF7621A011BD600BF3BF5 /* icon_gauge_pressure_peak.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6CC1A011BD500BF3BF5 /* icon_gauge_pressure_peak.png */; };
 		8B4EF7781A011BD600BF3BF5 /* Merit_Medical_002_object_indicator_pressure.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6E21A011BD500BF3BF5 /* Merit_Medical_002_object_indicator_pressure.png */; };
 		8B4EF77C1A011BD600BF3BF5 /* icon_info_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6E61A011BD500BF3BF5 /* icon_info_white.png */; };
-		8B4EF77D1A011BD600BF3BF5 /* Merit_Medical_icon_information.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6E71A011BD500BF3BF5 /* Merit_Medical_icon_information.png */; };
 		8B4EF77E1A011BD600BF3BF5 /* icon_settings_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6E81A011BD500BF3BF5 /* icon_settings_white.png */; };
 		8B4EF77F1A011BD600BF3BF5 /* Merit_Medical_icon_wait_arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF6E91A011BD500BF3BF5 /* Merit_Medical_icon_wait_arrows.png */; };
 		8B4EF7AA1A011BD600BF3BF5 /* Merit_Medical_icon_information.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B4EF7151A011BD600BF3BF5 /* Merit_Medical_icon_information.png */; };
@@ -161,7 +157,6 @@
 		8B5866A91A1646A500F2BA7B /* CSNetAddressKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B5866A01A1646A500F2BA7B /* CSNetAddressKeyboard.m */; };
 		8B5866AA1A1646A500F2BA7B /* ipkeyboard-ipv4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A11A1646A500F2BA7B /* ipkeyboard-ipv4@2x.png */; };
 		8B5866AB1A1646A500F2BA7B /* ipkeyboard-ipv6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A21A1646A500F2BA7B /* ipkeyboard-ipv6@2x.png */; };
-		8B5866AC1A1646A500F2BA7B /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A31A1646A500F2BA7B /* LICENSE */; };
 		8B5866AD1A1646A500F2BA7B /* netAddressBackspace.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A41A1646A500F2BA7B /* netAddressBackspace.png */; };
 		8B5866AE1A1646A500F2BA7B /* netAddressBackspace.psd in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A51A1646A500F2BA7B /* netAddressBackspace.psd */; };
 		8B5866AF1A1646A500F2BA7B /* netAddressBackspace@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B5866A61A1646A500F2BA7B /* netAddressBackspace@2x.png */; };
@@ -184,11 +179,6 @@
 		8B7DDD0E1A261CCE00393AF0 /* AHKSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7DDD0D1A261CCE00393AF0 /* AHKSlider.m */; };
 		8B85E4661AE8616E006935F3 /* ViewControllerHomePage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B85E4641AE8616D006935F3 /* ViewControllerHomePage.m */; };
 		8B85E4671AE8616E006935F3 /* ViewControllerHomePage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8B85E4651AE8616E006935F3 /* ViewControllerHomePage.xib */; };
-		8B85E4751AE8667E006935F3 /* cancel-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B85E46C1AE8667E006935F3 /* cancel-48@2x.png */; };
-		8B85E4761AE8667E006935F3 /* delete_sign-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B85E46D1AE8667E006935F3 /* delete_sign-48@2x.png */; };
-		8B85E4771AE8667E006935F3 /* home-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B85E46E1AE8667E006935F3 /* home-48@2x.png */; };
-		8B85E4781AE8667E006935F3 /* menu_black-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B85E46F1AE8667E006935F3 /* menu_black-48@2x.png */; };
-		8B85E4791AE8667E006935F3 /* menu-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B85E4701AE8667E006935F3 /* menu-48@2x.png */; };
 		8B85E4F61AE882BB006935F3 /* JBChartTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B85E4DA1AE882BB006935F3 /* JBChartTableCell.m */; };
 		8B85E4F71AE882BB006935F3 /* JBBarChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B85E4E31AE882BB006935F3 /* JBBarChartFooterView.m */; };
 		8B85E4F81AE882BB006935F3 /* JBLineChartFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B85E4E51AE882BB006935F3 /* JBLineChartFooterView.m */; };
@@ -1830,7 +1820,6 @@
 				8B9F8AFF1A1F7C56005F3DF0 /* scale.png in Resources */,
 				8B58667A1A13949000F2BA7B /* Icon-Spotlight-iOS7.png in Resources */,
 				8B4EF7611A011BD600BF3BF5 /* icon_gauge_pressure_current.png in Resources */,
-				8B85E4751AE8667E006935F3 /* cancel-48@2x.png in Resources */,
 				8B4EF7381A011BD600BF3BF5 /* background_grey_light.png in Resources */,
 				8B9D2B5E1BEA453500739E06 /* activityReading_1.csv in Resources */,
 				8B85E5181AEAA222006935F3 /* ViewControllerTest.xib in Resources */,
@@ -1852,11 +1841,9 @@
 				8B4EF81D1A016CF500BF3BF5 /* watch-1 2.png in Resources */,
 				68FE5C6119EC10C20077D2FC /* ViewControllerDevices.xib in Resources */,
 				8B58667C1A13949000F2BA7B /* Icon.png in Resources */,
-				8B85E4781AE8667E006935F3 /* menu_black-48@2x.png in Resources */,
 				8BB137051B7CFFB0008CC4AA /* activityReading.csv in Resources */,
 				8BB35C581ADDA8CE009EBE9D /* business_contact-48@2x.png in Resources */,
 				8B5866851A13965100F2BA7B /* battery-high.png in Resources */,
-				8B4EF75D1A011BD600BF3BF5 /* grey_wash_wall_@2X.png in Resources */,
 				8B4EF77F1A011BD600BF3BF5 /* Merit_Medical_icon_wait_arrows.png in Resources */,
 				8B4EF7321A011BD600BF3BF5 /* Icon-72@2x.png in Resources */,
 				8B4EF8381A026C2F00BF3BF5 /* link-2.png in Resources */,
@@ -1875,8 +1862,6 @@
 				8B4EF7781A011BD600BF3BF5 /* Merit_Medical_002_object_indicator_pressure.png in Resources */,
 				8B4EF7351A011BD600BF3BF5 /* white_texture.png in Resources */,
 				8B4EF8041A01676B00BF3BF5 /* user-setting-2.png in Resources */,
-				8B4EF75C1A011BD600BF3BF5 /* grey_wash_wall.png in Resources */,
-				8B85E4771AE8667E006935F3 /* home-48@2x.png in Resources */,
 				8B4EF7F61A012B1400BF3BF5 /* grey_wash_wall_@2X.png in Resources */,
 				8B85E4671AE8616E006935F3 /* ViewControllerHomePage.xib in Resources */,
 				8B4EF7621A011BD600BF3BF5 /* icon_gauge_pressure_peak.png in Resources */,
@@ -1891,7 +1876,6 @@
 				8BB35C561ADDA8CE009EBE9D /* app_bg2@2x.jpg in Resources */,
 				8B4EF7361A011BD600BF3BF5 /* white_texture_@2X.png in Resources */,
 				8B85E5281AEADFF4006935F3 /* GradientStroke-01.png in Resources */,
-				8B0211281BC843970044A259 /* LICENSE in Resources */,
 				8BCC37321C84CC1500729C1B /* ViewControllerHomePageIphone6.xib in Resources */,
 				8B5866861A13965100F2BA7B /* battery-low.png in Resources */,
 				8BB137121B7CFFB0008CC4AA /* lightReading.csv in Resources */,
@@ -1900,7 +1884,6 @@
 				8B4EF8411A0271B800BF3BF5 /* letter-1.png in Resources */,
 				8BB35C5F1ADDA8CE009EBE9D /* settings-48@2x.png in Resources */,
 				8B4EF8431A02928F00BF3BF5 /* IAILogo_Transparent.png in Resources */,
-				8B85E4761AE8667E006935F3 /* delete_sign-48@2x.png in Resources */,
 				8B9D2B601BEA453500739E06 /* activityReading_3.csv in Resources */,
 				8B4EF8361A026C2F00BF3BF5 /* bug-1.png in Resources */,
 				8B4EF80E1A0169B200BF3BF5 /* crosshair-2.png in Resources */,
@@ -1912,11 +1895,9 @@
 				8B4EF77C1A011BD600BF3BF5 /* icon_info_white.png in Resources */,
 				8B4EF7341A011BD600BF3BF5 /* white_leather_@2X.png in Resources */,
 				8B9D2B631BEA453500739E06 /* lightReading_2.csv in Resources */,
-				8B85E4791AE8667E006935F3 /* menu-48@2x.png in Resources */,
 				8B4EF83A1A026C2F00BF3BF5 /* sync-1.png in Resources */,
 				8B4EF77E1A011BD600BF3BF5 /* icon_settings_white.png in Resources */,
 				8B5866841A13965100F2BA7B /* battery-full.png in Resources */,
-				8B4EF77D1A011BD600BF3BF5 /* Merit_Medical_icon_information.png in Resources */,
 				8B35FD1B1A3A2F3E00806D44 /* ProgressHUD.bundle in Resources */,
 				8B9F8AFD1A1F74F0005F3DF0 /* ViewControllerDaysiDevicePair.xib in Resources */,
 				8BB35C5A1ADDA8CE009EBE9D /* cancel_filled-50@2x.png in Resources */,
@@ -1937,7 +1918,6 @@
 				8B5866AE1A1646A500F2BA7B /* netAddressBackspace.psd in Resources */,
 				8B5866AF1A1646A500F2BA7B /* netAddressBackspace@2x.png in Resources */,
 				8BB35C5D1ADDA8CE009EBE9D /* menu-48@2x.png in Resources */,
-				8B5866AC1A1646A500F2BA7B /* LICENSE in Resources */,
 				68FE5C6719EC10C20077D2FC /* ViewControllerProfile.xib in Resources */,
 				8B190E2A1ADD848700636DE3 /* ViewControllerResults.xib in Resources */,
 				8B9D2B621BEA453500739E06 /* lightReading_1.csv in Resources */,
