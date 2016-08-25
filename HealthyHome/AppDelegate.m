@@ -199,9 +199,9 @@ void uncaughtExceptionHandler(NSException *exception) {
     NSLog([error localizedDescription]);
     [self purgeDirectory:inboxPath];
     [ProgressHUD showSuccess:@"Data Restored !"];
-    NSString *dateString = [NSDateFormatter localizedStringFromDate:[NSDate date]
-                                                          dateStyle:NSDateFormatterShortStyle
-                                                          timeStyle:NSDateFormatterFullStyle];
+    //NSString *dateString = [NSDateFormatter localizedStringFromDate:[NSDate date]
+    //                                                      dateStyle:NSDateFormatterShortStyle
+    //                                                      timeStyle:NSDateFormatterFullStyle];
 //    [TestFairy checkpoint:[NSString stringWithFormat:@"Data Restored on %@",dateString]];
     
     

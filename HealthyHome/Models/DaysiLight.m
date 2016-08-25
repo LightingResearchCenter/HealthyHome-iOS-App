@@ -22,7 +22,7 @@ DAYSI_LIGHT_CALIBRATION_DATA_T m_DaysiCalibrationData;
 
 DAYSI_LIGHT_COMMAND_T m_PhoneToDaysiLightCommand;
 
-static const int kTIME_STAMP_LOG_BUFFER_SIZE = 4;               // Size of buffer that holds the time stamp data
+//static const int kTIME_STAMP_LOG_BUFFER_SIZE = 4;               // Size of buffer that holds the time stamp data
 
 
 

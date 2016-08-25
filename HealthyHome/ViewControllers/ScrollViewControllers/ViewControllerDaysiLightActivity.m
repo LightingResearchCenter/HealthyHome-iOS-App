@@ -32,7 +32,7 @@ NSDate *latestSyncTimeForDaysiLight;
     if (oldestSyncTimeForDaysiLight != nil)
     {
     
-        NSTimeInterval myTimeINterval = [latestSyncTimeForDaysiLight timeIntervalSinceDate: oldestSyncTimeForDaysiLight];
+        //NSTimeInterval myTimeINterval = [latestSyncTimeForDaysiLight timeIntervalSinceDate: oldestSyncTimeForDaysiLight];
   
         self.UILabelDataLogged.text = [NSString stringWithFormat:@"%@ of data avlbl. %ld Recs.",[NSDate FriendlyTimeBetweenTwoDates:oldestSyncTimeForDaysiLight NewDate: [NSDate date] ThresholdSeconds:60], [CoreDataManager GetLightReadingCount]];
         
@@ -119,7 +119,7 @@ NSDate *latestSyncTimeForDaysiLight;
             
             if (oldestSyncTime != nil)
             {
-                NSTimeInterval interval = [lastSyncTime timeIntervalSinceDate:oldestSyncTime];
+                //NSTimeInterval interval = [lastSyncTime timeIntervalSinceDate:oldestSyncTime];
                 //NSLog(@"Interval is %f", (interval/3600/24));
                 self.UILabelDataLogged.text = [NSString stringWithFormat:@"%@ of data avlbl. %ld Recs.",[NSDate FriendlyTimeBetweenTwoDates:oldestSyncTime NewDate:lastSyncTime ThresholdSeconds:60], [CoreDataManager GetLightReadingCount]];
                 
