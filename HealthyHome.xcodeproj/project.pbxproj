@@ -277,8 +277,6 @@
 		8BB35C5F1ADDA8CE009EBE9D /* settings-48@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BB35C461ADDA8CE009EBE9D /* settings-48@2x.png */; };
 		8BCC37321C84CC1500729C1B /* ViewControllerHomePageIphone6.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC37311C84CC1500729C1B /* ViewControllerHomePageIphone6.xib */; };
 		8BCC37341C85E73700729C1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BCC37331C85E73700729C1B /* Images.xcassets */; };
-		8BD1592919ED5A84001FC820 /* libRscMgrUniv.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BD1592519ED5A84001FC820 /* libRscMgrUniv.a */; };
-		8BD1592A19ED5A84001FC820 /* PortconfigStrings.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8BD1592619ED5A84001FC820 /* PortconfigStrings.plist */; };
 		8BDCEA6C1CAEF67100220E95 /* setting-wrenches-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BDCEA6B1CAEF67100220E95 /* setting-wrenches-60.png */; };
 		8BDCEA6E1CAEF7F300220E95 /* information-60.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BDCEA6D1CAEF7F300220E95 /* information-60.png */; };
 		8BDCEA701CAEF8CB00220E95 /* information-90.png in Resources */ = {isa = PBXBuildFile; fileRef = 8BDCEA6F1CAEF8CB00220E95 /* information-90.png */; };
@@ -765,10 +763,6 @@
 		8BB35C461ADDA8CE009EBE9D /* settings-48@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-48@2x.png"; sourceTree = "<group>"; };
 		8BCC37311C84CC1500729C1B /* ViewControllerHomePageIphone6.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewControllerHomePageIphone6.xib; sourceTree = "<group>"; };
 		8BCC37331C85E73700729C1B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		8BD1592519ED5A84001FC820 /* libRscMgrUniv.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libRscMgrUniv.a; sourceTree = "<group>"; };
-		8BD1592619ED5A84001FC820 /* PortconfigStrings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = PortconfigStrings.plist; sourceTree = "<group>"; };
-		8BD1592719ED5A84001FC820 /* redparkSerial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = redparkSerial.h; sourceTree = "<group>"; };
-		8BD1592819ED5A84001FC820 /* RscMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RscMgr.h; sourceTree = "<group>"; };
 		8BDCEA6B1CAEF67100220E95 /* setting-wrenches-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-wrenches-60.png"; sourceTree = "<group>"; };
 		8BDCEA6D1CAEF7F300220E95 /* information-60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "information-60.png"; sourceTree = "<group>"; };
 		8BDCEA6F1CAEF8CB00220E95 /* information-90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "information-90.png"; sourceTree = "<group>"; };
@@ -786,7 +780,6 @@
 				8B58669D1A1642D300F2BA7B /* libz.dylib in Frameworks */,
 				68FE5C7419EC1B650077D2FC /* CoreData.framework in Frameworks */,
 				68FE5C7219EC1B540077D2FC /* QuartzCore.framework in Frameworks */,
-				8BD1592919ED5A84001FC820 /* libRscMgrUniv.a in Frameworks */,
 				68FE5BF819E8C6860077D2FC /* CoreGraphics.framework in Frameworks */,
 				68FE5C7019EC1B2F0077D2FC /* CoreBluetooth.framework in Frameworks */,
 				68FE5BFA19E8C6860077D2FC /* UIKit.framework in Frameworks */,
@@ -982,7 +975,6 @@
 				8B58669E1A1646A500F2BA7B /* NetAddressKeyboard */,
 				8B5866921A163D1E00F2BA7B /* TestFlightSDK */,
 				8B58668E1A15106300F2BA7B /* BadgeView */,
-				8BD1592419ED5A84001FC820 /* RedParkSerial */,
 				68FE5DBF19EC25DA0077D2FC /* URBSegmentedControl */,
 				68FE5DAE19EC25940077D2FC /* RNGridMenu */,
 				68FE5CD119EC20090077D2FC /* GaugeControl */,
@@ -1741,17 +1733,6 @@
 			path = images;
 			sourceTree = "<group>";
 		};
-		8BD1592419ED5A84001FC820 /* RedParkSerial */ = {
-			isa = PBXGroup;
-			children = (
-				8BD1592519ED5A84001FC820 /* libRscMgrUniv.a */,
-				8BD1592619ED5A84001FC820 /* PortconfigStrings.plist */,
-				8BD1592719ED5A84001FC820 /* redparkSerial.h */,
-				8BD1592819ED5A84001FC820 /* RscMgr.h */,
-			);
-			path = RedParkSerial;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1889,7 +1870,6 @@
 				8B4EF80E1A0169B200BF3BF5 /* crosshair-2.png in Resources */,
 				8B4EF8151A0169B200BF3BF5 /* watch-1.png in Resources */,
 				8B5866771A13949000F2BA7B /* Icon-Small-50.png in Resources */,
-				8BD1592A19ED5A84001FC820 /* PortconfigStrings.plist in Resources */,
 				8BB35C551ADDA8CE009EBE9D /* app_bg1@2x.jpg in Resources */,
 				8B5866651A13917C00F2BA7B /* DaysiMeterAppIcon@2x.png in Resources */,
 				8B4EF77C1A011BD600BF3BF5 /* icon_info_white.png in Resources */,
@@ -2210,7 +2190,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Healthyhome/ThirdParty/RedParkSerial",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/TestFlightSDK",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/JVMenuPopover",
 					"$(PROJECT_DIR)/HealthyHome/ThirdParty/TestFairySDK-1.5.1",
@@ -2238,7 +2217,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Healthyhome/ThirdParty/RedParkSerial",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/TestFlightSDK",
 					"$(PROJECT_DIR)/Healthyhome/ThirdParty/JVMenuPopover",
 					"$(PROJECT_DIR)/HealthyHome/ThirdParty/TestFairySDK-1.5.1",

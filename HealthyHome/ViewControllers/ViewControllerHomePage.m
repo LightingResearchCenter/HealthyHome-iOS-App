@@ -25,7 +25,6 @@
 #include "UserSettings.h"
 
 
-#include "RscMgr.h"
 #include "DaysiUtilities.h"
 
 #include "AppDelegate.h"
