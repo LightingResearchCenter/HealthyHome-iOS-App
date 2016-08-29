@@ -31,9 +31,9 @@ bool goalsChanged = false;
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [DaysiUtilities SetLayerToGlow:self.UIButttonClose.layer WithColor:[DaysiUtilities GetGlowColor]];
-    self.UISliderDesiredSleepTime.Value = [UserSettings GetProfileNormalSleepAt];
-    self.UISliderDesiredWakeUpTime.Value = [UserSettings GetProfileNormalWakeAt];
-    self.UISliderNumberOfDays.Value = [UserSettings GetProfileTargetDays];
+    self.UISliderDesiredSleepTime.value = [UserSettings GetProfileNormalSleepAt];
+    self.UISliderDesiredWakeUpTime.value = [UserSettings GetProfileNormalWakeAt];
+    self.UISliderNumberOfDays.value = [UserSettings GetProfileTargetDays];
     
     //Set the wallpaper for the Parent View
     //self.view.backgroundColor=[UIColor colorWithPatternImage:[UIImage imageNamed:@"grey_wash_wall.png"]];
