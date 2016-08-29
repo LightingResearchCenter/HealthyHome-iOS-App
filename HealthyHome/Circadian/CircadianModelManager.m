@@ -95,7 +95,7 @@ unsigned long unixTimeLogStart, unixTimeNow;
         1446474304
     };
 
-    if (k_FEATURE_USE_TEST_LOG_FILE == 1)
+    if (k_FEATURE_USE_TEST_LOG_FILE == /* DISABLES CODE */ (1))
     {
     
         countRecompute++;
@@ -212,14 +212,14 @@ unsigned long unixTimeLogStart, unixTimeNow;
 
     
     //Todo - Remove this before Release
-    if (k_FEATURE_USE_TEST_LOG_FILE)
-    {
-        currentUnixTime = runTimeArray[countRecompute-1];
-        
-        currentGMTOffset = -5;
-        myGoal.bedTime=   22.5;
-        myGoal.riseTime=  7.5;
-    }
+//    if (k_FEATURE_USE_TEST_LOG_FILE)
+//    {
+//        currentUnixTime = runTimeArray[countRecompute-1];
+//        
+//        currentGMTOffset = -5;
+//        myGoal.bedTime=   22.5;
+//        myGoal.riseTime=  7.5;
+//    }
     
     lastErrorCode = CircadianModel_Initialize( myProfile, myGoal, currentUnixTime, currentGMTOffset);
 
