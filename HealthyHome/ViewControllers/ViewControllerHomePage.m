@@ -1032,21 +1032,21 @@ UITapGestureRecognizer *tapGestureRecognizer;
 - (void) centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI
 {
     
-    //NSLog(@"%s", __PRETTY_FUNCTION__);
-    //NSLog(@"Discovered %lu peripheral as a result of scanning", (unsigned long)myListOfPeripherals.count);
+    NSLog(@"%s", __PRETTY_FUNCTION__);
+    NSLog(@"Discovered %lu peripheral as a result of scanning", (unsigned long)myListOfPeripherals.count);
     
     
     // Get the manufacturer data from the advertisement packet. The manufacturer data contains the MACId of the peripheral
     NSData *pManufacturerData = [advertisementData valueForKey:@"kCBAdvDataManufacturerData"];
-    //NSLog (@"Manufacturer Data %@", [pManufacturerData hexadecimalString] );
+    NSLog (@"Manufacturer Data %@", [pManufacturerData hexadecimalString] );
     NSData *pMACIdData = [pManufacturerData subdataWithRange:NSMakeRange(2, [pManufacturerData length]-2) ];
-    //NSLog (@"MacId Data %@", [pMACIdData hexadecimalString] );
-    //NSLog(@"MAC Id Data Is %@", pMACIdData);
+    NSLog (@"MacId Data %@", [pMACIdData hexadecimalString] );
+    NSLog(@"MAC Id Data Is %@", pMACIdData);
     //NSLog (@"UUID is  %@", peripheral.UUID);
-    //NSLog (@"UUID is  %@", peripheral.identifier);
+    NSLog (@"UUID is  %@", peripheral.identifier);
     
     
-   // NSLog(@"Found Peripheral with Name: %@ RSSI data:%@ AdvData: %@", peripheral.name, peripheral.RSSI, advertisementData);
+   NSLog(@"Found Peripheral with Name: %@ RSSI data:%@ AdvData: %@", peripheral.name, peripheral.RSSI, advertisementData);
     
     NSString *localName;
    NSString *strHexId = [pMACIdData hexadecimalString];
