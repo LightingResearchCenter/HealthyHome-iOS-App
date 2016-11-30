@@ -51,6 +51,7 @@
 		68FE5DBD19EC25B70077D2FC /* DaysiMotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE5DB819EC25B70077D2FC /* DaysiMotion.m */; };
 		68FE5DBE19EC25B70077D2FC /* StopWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE5DBA19EC25B70077D2FC /* StopWatch.m */; };
 		68FE5DC219EC25DA0077D2FC /* URBSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FE5DC119EC25DA0077D2FC /* URBSegmentedControl.m */; };
+		6C5FB64D1D908B74003AED17 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C5FB64C1D908B74003AED17 /* Storyboard.storyboard */; };
 		8B0211121BC843970044A259 /* GlowImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0210D01BC843970044A259 /* GlowImageView.m */; };
 		8B0211131BC843970044A259 /* MenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0210D21BC843970044A259 /* MenuButton.m */; };
 		8B0211141BC843970044A259 /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B0210D41BC843970044A259 /* MenuItem.m */; };
@@ -372,6 +373,7 @@
 		68FE5DBA19EC25B70077D2FC /* StopWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StopWatch.m; sourceTree = "<group>"; };
 		68FE5DC019EC25DA0077D2FC /* URBSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URBSegmentedControl.h; sourceTree = "<group>"; };
 		68FE5DC119EC25DA0077D2FC /* URBSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URBSegmentedControl.m; sourceTree = "<group>"; };
+		6C5FB64C1D908B74003AED17 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		8B0210CF1BC843970044A259 /* GlowImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlowImageView.h; sourceTree = "<group>"; };
 		8B0210D01BC843970044A259 /* GlowImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlowImageView.m; sourceTree = "<group>"; };
 		8B0210D11BC843970044A259 /* MenuButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuButton.h; sourceTree = "<group>"; };
@@ -843,6 +845,7 @@
 				68FE5C0519E8C6860077D2FC /* AppDelegate.m */,
 				8BCC37331C85E73700729C1B /* Images.xcassets */,
 				68FE5BFC19E8C6860077D2FC /* Supporting Files */,
+				6C5FB64C1D908B74003AED17 /* Storyboard.storyboard */,
 			);
 			path = HealthyHome;
 			sourceTree = "<group>";
@@ -1896,6 +1899,7 @@
 				8B9D2B641BEA453500739E06 /* lightReading_3.csv in Resources */,
 				8B5866751A13949000F2BA7B /* Icon-120.png in Resources */,
 				8B5866AE1A1646A500F2BA7B /* netAddressBackspace.psd in Resources */,
+				6C5FB64D1D908B74003AED17 /* Storyboard.storyboard in Resources */,
 				8B5866AF1A1646A500F2BA7B /* netAddressBackspace@2x.png in Resources */,
 				8BB35C5D1ADDA8CE009EBE9D /* menu-48@2x.png in Resources */,
 				68FE5C6719EC10C20077D2FC /* ViewControllerProfile.xib in Resources */,
